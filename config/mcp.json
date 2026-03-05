@@ -1,4 +1,5 @@
 {
+  "_comment": "Referenz-Kopie. Aktive Config: ~/.mcp.json (4 Server: sidekick, thinking, github, memory)",
   "mcpServers": {
     "sequential-thinking": {
       "command": "node",
@@ -13,6 +14,20 @@
         "OLLAMA_API_URL": "https://ollama.com/v1",
         "OLLAMA_LOCAL_URL": "http://localhost:11434",
         "OLLAMA_LOCAL_MODEL": "frob/locooperator:4b-q4_K_M"
+      }
+    },
+    "github": {
+      "command": "node",
+      "args": ["/data/data/com.termux/files/usr/lib/node_modules/@modelcontextprotocol/server-github/index.js"],
+      "env": {
+        "GITHUB_PERSONAL_ACCESS_TOKEN": "${GITHUB_PAT}"
+      }
+    },
+    "memory": {
+      "command": "node",
+      "args": ["/data/data/com.termux/files/usr/lib/node_modules/@modelcontextprotocol/server-memory/dist/index.js"],
+      "env": {
+        "MEMORY_FILE_PATH": "/data/data/com.termux/files/home/.config/ai-manager/knowledge-graph.json"
       }
     }
   }
