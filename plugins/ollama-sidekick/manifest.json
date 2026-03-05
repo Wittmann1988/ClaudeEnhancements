@@ -1,0 +1,13 @@
+{
+  "name": "ollama-sidekick",
+  "version": "1.0.0",
+  "description": "Always-active Ollama Nemotron sidekick agent for research, review, and analysis",
+  "skills": [
+    {
+      "name": "sidekick-orchestration",
+      "path": "skills/sidekick-orchestration.md",
+      "alwaysActive": true,
+      "description": "Orchestration rules for when and how to use the Ollama sidekick agent"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "mcpServers": {
+    "sequential-thinking": {
+      "command": "node",
+      "args": ["/data/data/com.termux/files/home/downloads/mcp-sequential-thinking/dist/index.js"]
+    },
+    "ollama-sidekick": {
+      "command": "node",
+      "args": ["/data/data/com.termux/files/home/ollama-sidekick/index.js"],
+      "env": {
+        "OLLAMA_API_KEY": "${OLLAMA_API_KEY}",
+        "OLLAMA_MODEL": "nemotron-3-nano:30b",
+        "OLLAMA_API_URL": "https://ollama.com/v1",
+        "OLLAMA_LOCAL_URL": "http://localhost:11434",
+        "OLLAMA_LOCAL_MODEL": "frob/locooperator:4b-q4_K_M"
+      }
+    }
+  }
+}
